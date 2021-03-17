@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +17,9 @@ namespace interfaceIzara
 {
     public partial class UserControlInscription : UserControl
     {
+
+        private string pathPDP { get; set; }
+
         public UserControlInscription()
         {
             InitializeComponent();
@@ -34,19 +39,14 @@ namespace interfaceIzara
                 if (textBoxInscriptionPassword.Text != textBoxInscriptionConfirmationPassword.Text)
                     throw new Exception("Mot de passe incorecte");
 
-                Users parent = new Users(0,
+                Users parent = new Users(
                     textBoxInscriptionNom.Text,
                     textBoxInscriptionPrenom.Text,
                     textBoxInscriptionMail.Text,
                     textBoxInscriptionPassword.Text,
-                    true,
-                    false,
-                    DateTime.Now,
-                    0,
-                    "",
-                    0,
-                    1,
-                    null
+                    comboBoxInscriptionVille.Text,
+                    textBoxInscriptionWhatsapp.Text,
+                    pathPDP
                 );
 
                 Authentication auth = new Authentication();
@@ -70,12 +70,36 @@ namespace interfaceIzara
                 MessageBox.Show("Veuillez ressaisir votre mot de passe!");
             }
         }
+
+
         private class AuthException : Exception
         {
             public AuthException(string msg) : base(msg)
             {
 
             }        
+        }
+
+        private void pictureBoxPDP_Click(object sender, EventArgs e)
+        {
+            var filePath = string.Empty;
+            var fileRecept = string.Empty;
+            OpenFileDialog i = new OpenFileDialog();
+            i.Filter = "jpg files |*.jpg|png files |*.png| all files |*.*";
+            i.FilterIndex = 3;
+            i.RestoreDirectory = true;
+            if (i.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                filePath = i.FileName;
+                string[] pth = filePath.Split('\\');
+                var CurrentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                fileRecept = CurrentDirectory + "\\Assets\\img\\profilePicture\\"+ pth[pth.Length - 1];
+
+                File.Copy(@filePath, @fileRecept, true);
+                pictureBoxPDP.Load(@fileRecept);
+
+                pathPDP = pth[pth.Length - 1];
+            }
         }
     }
 }

@@ -25,20 +25,9 @@ namespace interfaceIzara
             try {
                 if (textBoxCandidaturePassword.Text != textBoxCandidatureConfirmationPassword.Text)
                     throw new Exception("Mot de passe incorecte");
-                Users prof = new Users(0,
-                    textBoxCandidatureNom.Text,
-                    textBoxCandidaturePrenom.Text,
-                    textBoxCandidatureMail.Text,
-                    textBoxCandidaturePassword.Text,
-                    true,
-                    false,
-                    new DateTime(),
-                    0,
-                    comboBoxCandidatureNiveau.Text,
-                    0,
-                    2,
-                    null
-                    );
+                Users prof = new Users(
+                    //...
+                );
                 Authentication authentif = new Authentication();
                 if (!authentif.Subscribe(prof))
                     throw new AuthException("misy olana ilay inscription");

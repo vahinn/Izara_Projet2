@@ -68,7 +68,9 @@
     </Compile>
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Model\CrudBD.cs" />
+    <Compile Include="Model\Entities\Matiere.cs" />
     <Compile Include="Model\Entities\Users.cs" />
+    <Compile Include="Model\Entities\Ville.cs" />
     <Compile Include="Model\Utilities\Authentication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

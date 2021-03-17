@@ -2,6 +2,7 @@
 using System.Reflection;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
+using System.Data.SqlTypes;
 
 namespace interfaceIzara.Model
 {
@@ -54,7 +55,7 @@ namespace interfaceIzara.Model
             foreach (var prop in properties)
             {
                 column = dataReader.GetOrdinal(prop.Name);
-                Console.WriteLine(ReadValue(prop, column, dataReader));
+                Console.WriteLine("Objet : {0}", ReadValue(prop, column, dataReader));
                 prop.SetValue(element, ReadValue(prop, column, dataReader), null);
             }
         }
@@ -65,19 +66,63 @@ namespace interfaceIzara.Model
             switch (property.PropertyType.Name)
             {
                 case "Int32":
-                    return dataReader.GetInt32(column);
+                    try
+                    {
+                        Console.WriteLine("Data => {0}", dataReader.GetInt32(column));
+                        return dataReader.GetInt32(column);
+                    } catch(SqlNullValueException e)
+                    {
+                        return null;
+                    }
                 case "Single":
-                    return dataReader.GetFloat(column);
+                    try
+                    {
+                        Console.WriteLine("Data => {0}", dataReader.GetFloat(column));
+                        return dataReader.GetFloat(column);
+                    } catch (SqlNullValueException e)
+                    {
+                        return null;
+                    }
                 case "Double":
-                    return dataReader.GetDouble(column);
-                case "String":
-                    return dataReader.GetString(column);
+                    try
+                    {
+                        Console.WriteLine("Data => {0}", dataReader.GetDouble(column));
+                        return dataReader.GetDouble(column);
+                    }
+                    catch (SqlNullValueException e)
+                    {
+                        return null;
+                    }
                 case "DateTime":
-                    return dataReader.GetDateTime(column);
+                    try
+                    {
+                        Console.WriteLine("Data => {0}", dataReader.GetDateTime(column));
+                        return dataReader.GetDateTime(column);
+                    }
+                    catch (SqlNullValueException e)
+                    {
+                        return null;
+                    }
                 case "Boolean":
-                    return dataReader.GetBoolean(column);
+                    try
+                    {
+                        Console.WriteLine("Data => {0}", dataReader.GetBoolean(column));
+                        return dataReader.GetBoolean(column);
+                    }
+                    catch (SqlNullValueException e)
+                    {
+                        return null;
+                    }
                 default:
-                    return dataReader.GetString(column);
+                    try
+                    {
+                        Console.WriteLine("Data => {0}", dataReader.GetString(column));
+                        return dataReader.GetString(column);
+                    }
+                    catch (SqlNullValueException e)
+                    {
+                        return null;
+                    }
             }
         }
 

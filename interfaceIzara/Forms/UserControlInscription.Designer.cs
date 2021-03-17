@@ -45,12 +45,12 @@ namespace interfaceIzara
             this.comboBoxInscriptionVille = new System.Windows.Forms.ComboBox();
             this.comboBoxInscriptionPays = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPDP = new System.Windows.Forms.PictureBox();
             this.textBoxInscriptionPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxInscriptionConfirmationPassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPDP)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxInscriptionWhatsapp
@@ -219,16 +219,17 @@ namespace interfaceIzara
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // pictureBoxPDP
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(145, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 92;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxPDP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxPDP.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPDP.Image")));
+            this.pictureBoxPDP.Location = new System.Drawing.Point(145, 12);
+            this.pictureBoxPDP.Name = "pictureBoxPDP";
+            this.pictureBoxPDP.Size = new System.Drawing.Size(90, 90);
+            this.pictureBoxPDP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPDP.TabIndex = 92;
+            this.pictureBoxPDP.TabStop = false;
+            this.pictureBoxPDP.Click += new System.EventHandler(this.pictureBoxPDP_Click);
             // 
             // textBoxInscriptionPassword
             // 
@@ -281,7 +282,7 @@ namespace interfaceIzara
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxInscriptionPassword);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxPDP);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBoxInscriptionPays);
             this.Controls.Add(this.comboBoxInscriptionVille);
@@ -300,7 +301,7 @@ namespace interfaceIzara
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlInscription";
             this.Size = new System.Drawing.Size(850, 525);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPDP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,7 +324,7 @@ namespace interfaceIzara
         private System.Windows.Forms.ComboBox comboBoxInscriptionVille;
         private System.Windows.Forms.ComboBox comboBoxInscriptionPays;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxPDP;
         private System.Windows.Forms.TextBox textBoxInscriptionPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxInscriptionConfirmationPassword;

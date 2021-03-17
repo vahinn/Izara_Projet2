@@ -30,35 +30,92 @@ namespace interfaceIzara.Model.Entities
         public DateTime validationDate { get; set; }
         public float rate { get; set; }
         public string niveau { get; set; }
+        public string pdp { get; set; }
+        private string matiere;
+        public string ref_matiere { 
+            get 
+            {
+                return this.matiere;
+            }
+            set 
+            {
+                this.matiere = getRefMatiere(value);
+            }
+        }
         public float tarifHoraire { get; set; }
+        public string whatsApp { get; set; }
+        public int anneeExp { get; set; }
+        public string cv { get; set; }
+        public string Etablissement { get; set; }
         public int reference_groupe { get; set; }
         public string code_parrainage { get; set; }
-
-        public Users(int iD, string nom, string prenom, string mail, string password, bool isActive, bool isValidate, DateTime validationDate, float rate, string niveau, float tarifHoraire, int rf_group, string cd_parrainage)
+        private string ville;
+        public string cp_ville
         {
-            ID = iD;
-            this.nom = nom;
-            this.prenom = prenom;
-            this.mail = mail;
-            this.password = password;
-            this.isActive = isActive;
-            this.isValidate = isValidate;
-            this.validationDate = validationDate;
-            this.rate = rate;
-            this.niveau = niveau;
-            this.tarifHoraire = tarifHoraire;
-            this.reference_groupe = rf_group;
-            this.code_parrainage = cd_parrainage;
+            get
+            {
+                return ville;
+            }
+            set
+            {
+                ville = getVille(value);
+            }
         }
+
 
         public Users()
         {
 
         }
+
+
+        /***
+         * 
+         * For authentication
+         * 
+         */
         public Users(string mail, string pass)
         {
             this.mail = mail;
             this.password = pass;
+        }
+
+        /**
+         * 
+         * For creating parent
+         * 
+         */
+        public Users(string nom, string prenom, string mail, string password, string ville, string whtsapp, string pdp)
+        {
+            this.nom = nom;
+            this.prenom = prenom;
+            this.mail = mail;
+            this.password = password;
+            this.cp_ville = ville;
+            this.whatsApp = whtsapp;
+            this.pdp = pdp;
+            this.reference_groupe = 1;
+        }
+
+        /**
+         * 
+         * For creating prof
+         * 
+         */
+        public Users(string nom, string prenom, string mail, string password, string ville, string whtsapp, string cv, string pdp, string etablissement, string matiere, int anneeExp, string niveau)
+        {
+            this.nom = nom;
+            this.prenom = prenom;
+            this.password = password;
+            this.cp_ville = ville;
+            this.whatsApp = whtsapp;
+            this.cv = cv;
+            this.pdp = pdp;
+            this.Etablissement = etablissement;
+            this.ref_matiere = matiere;
+            this.anneeExp = anneeExp;
+            this.niveau = niveau;
+            this.reference_groupe = 2;
         }
 
         private String hashPassword(string pass)
@@ -77,6 +134,54 @@ namespace interfaceIzara.Model.Entities
                 }
                 return sb.ToString();
             }
+        }
+
+        private string getVille(string val)
+        {
+            ConnectDB con = new ConnectDB();
+            CrudDB db = new CrudDB();
+
+            try
+            {
+
+                con.Connexion.Open();
+
+                List<Ville> listVilles = db.Find<Ville>("ville", new Ville(val), "", con.Connexion);
+
+                return listVilles[0].CP;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("getVille :: Probleme :: {0}", e.StackTrace);
+            }
+            finally
+            {
+                con.Connexion.Close();
+            }
+            return null;
+        }
+
+        private string getRefMatiere(string matiere)
+        {
+            ConnectDB con = new ConnectDB();
+            CrudDB db = new CrudDB();
+
+            try
+            {
+                con.Connexion.Open();
+                List<Matiere> listeMatiere = db.Find<Matiere>("Matiere", new Matiere(), "", con.Connexion);
+
+                return listeMatiere[0].REF_MATIERE;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Users :: GetMatiere :: {0}",e.StackTrace);
+            }
+            finally
+            {
+                con.Connexion.Close();
+            }
+            return null;
         }
     }
 }
