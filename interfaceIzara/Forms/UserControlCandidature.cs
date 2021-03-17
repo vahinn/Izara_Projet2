@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,6 +78,26 @@ namespace interfaceIzara
         private void radioButtonProf_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            var filePath = string.Empty;
+            var fileRecept = string.Empty;
+            OpenFileDialog i = new OpenFileDialog();
+            i.Filter = "jpg files( *.jpg)|*.jpg|png files (*.png)|*.png| all files (*.*)|*.*";
+            i.FilterIndex = 3;
+            i.RestoreDirectory = true;
+            if (i.ShowDialog() == DialogResult.OK)
+            {
+                filePath = i.FileName;
+                string[] pth = filePath.Split('\\');
+                var CurrentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                fileRecept = CurrentDirectory + "\\Assets\\img\\profilePicture\\"/*+ pth[pth.Length - 1]*/;
+
+                File.Copy(@filePath, @CurrentDirectory + pth[pth.Length - 1], true);
+                
+            }
         }
     }
 

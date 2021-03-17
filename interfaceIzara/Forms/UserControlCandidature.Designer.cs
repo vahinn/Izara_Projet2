@@ -257,13 +257,14 @@ namespace interfaceIzara
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 113;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // radioButtonProf
             // 
             this.radioButtonProf.AutoSize = true;
             this.radioButtonProf.Location = new System.Drawing.Point(6, 21);
             this.radioButtonProf.Name = "radioButtonProf";
-            this.radioButtonProf.Size = new System.Drawing.Size(91, 20);
+            this.radioButtonProf.Size = new System.Drawing.Size(98, 21);
             this.radioButtonProf.TabIndex = 114;
             this.radioButtonProf.TabStop = true;
             this.radioButtonProf.Text = "Professeur";
@@ -286,7 +287,7 @@ namespace interfaceIzara
             this.radioButtonEtudiant.AutoSize = true;
             this.radioButtonEtudiant.Location = new System.Drawing.Point(143, 21);
             this.radioButtonEtudiant.Name = "radioButtonEtudiant";
-            this.radioButtonEtudiant.Size = new System.Drawing.Size(74, 20);
+            this.radioButtonEtudiant.Size = new System.Drawing.Size(81, 21);
             this.radioButtonEtudiant.TabIndex = 115;
             this.radioButtonEtudiant.TabStop = true;
             this.radioButtonEtudiant.Text = "Etudiant";

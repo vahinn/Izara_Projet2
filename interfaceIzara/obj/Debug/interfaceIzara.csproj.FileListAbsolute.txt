@@ -48,3 +48,30 @@ C:\Users\Inclusiv Academy 1\Documents\Dev\interfaceIzara\interfaceIzara\obj\Debu
 C:\Users\Inclusiv Academy 1\Documents\Dev\interfaceIzara\interfaceIzara\bin\Debug\DotLiquid.dll
 C:\Users\Inclusiv Academy 1\Documents\Dev\interfaceIzara\interfaceIzara\bin\Debug\DotLiquid.xml
 C:\Users\Inclusiv Academy 1\Documents\Dev\interfaceIzara\interfaceIzara\bin\Debug\it\DotLiquid.resources.dll
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\interfaceIzara.exe.config
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.exe
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.pdb
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\interfaceIzara.exe
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\interfaceIzara.pdb
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\DotLiquid.dll
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\MySql.Data.dll
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\MySql.Data.Entity.dll
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\MySql.Web.dll
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\DotLiquid.xml
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\bin\Debug\it\DotLiquid.resources.dll
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.csprojResolveAssemblyReference.cache
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.Form1.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.Properties.Resources.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlAdmin.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlCandidature.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlConnexion.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlContact.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlInscription.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlMenu.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlMenuBarre.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlMenuParents.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlMenuProf.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlParents.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlParrainage.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.UserControlProf.resources
+C:\Users\InclusivAcademy6\Projet\Izara\izara\interfaceIzara\obj\Debug\interfaceIzara.csproj.GenerateResource.Cache
