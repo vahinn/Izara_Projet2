@@ -117,14 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>                                                                                         Ville, le ...............................
-
-Je soussigné(e) Madame (Monsieur) .................................................................................... atteste par la présente parrainer Madame (Monsieur) ............................................................. en qualité de professeur de (matières enseignées) ...........................
-Veuillez agréer Madame, Monsieur mes respectueuses salutations.
-
-Madame (Monsieur )............................</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonEnvoiCandidature.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -146,4 +138,16 @@ Madame (Monsieur )............................</value>
         FV3AbkjzDYMAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="textBoxParrainage.Text" xml:space="preserve">
+    <value>                                                                                         Ville, le ...............................
+
+Je soussigné(e) Madame (Monsieur) .................................................................................... atteste par la présente parrainer Madame (Monsieur) ............................................................. en qualité de professeur de (matières enseignées) ...........................
+Veuillez agréer Madame, Monsieur mes respectueuses salutations.
+
+Madame (Monsieur )............................
+</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

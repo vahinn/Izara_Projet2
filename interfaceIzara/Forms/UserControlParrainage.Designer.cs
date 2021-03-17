@@ -29,10 +29,12 @@ namespace interfaceIzara
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlParrainage));
             this.labelParrainage = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonEnvoiCandidature = new System.Windows.Forms.Button();
+            this.textBoxParrainage = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // labelParrainage
@@ -47,16 +49,6 @@ namespace interfaceIzara
             this.labelParrainage.TabIndex = 0;
             this.labelParrainage.Text = "Lettre de Parrainage";
             this.labelParrainage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(186, 177);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(587, 165);
-            this.label1.TabIndex = 1;
-            this.label1.Text = resources.GetString("label1.Text");
             // 
             // buttonEnvoiCandidature
             // 
@@ -75,13 +67,30 @@ namespace interfaceIzara
             this.buttonEnvoiCandidature.Text = "Envoyer";
             this.buttonEnvoiCandidature.UseVisualStyleBackColor = false;
             // 
+            // textBoxParrainage
+            // 
+            this.textBoxParrainage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxParrainage.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxParrainage.Location = new System.Drawing.Point(84, 139);
+            this.textBoxParrainage.Multiline = true;
+            this.textBoxParrainage.Name = "textBoxParrainage";
+            this.textBoxParrainage.Size = new System.Drawing.Size(650, 163);
+            this.textBoxParrainage.TabIndex = 89;
+            this.textBoxParrainage.Text = resources.GetString("textBoxParrainage.Text");
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // UserControlParrainage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textBoxParrainage);
             this.Controls.Add(this.buttonEnvoiCandidature);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelParrainage);
             this.Name = "UserControlParrainage";
             this.Size = new System.Drawing.Size(850, 525);
@@ -93,7 +102,8 @@ namespace interfaceIzara
         #endregion
 
         private System.Windows.Forms.Label labelParrainage;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonEnvoiCandidature;
+        private System.Windows.Forms.TextBox textBoxParrainage;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

@@ -40,7 +40,6 @@ namespace interfaceIzara
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.buttonEnvoiInscription = new System.Windows.Forms.Button();
             this.comboBoxInscriptionVille = new System.Windows.Forms.ComboBox();
             this.comboBoxInscriptionPays = new System.Windows.Forms.ComboBox();
@@ -50,6 +49,7 @@ namespace interfaceIzara
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxInscriptionConfirmationPassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,21 +155,6 @@ namespace interfaceIzara
             this.label6.TabIndex = 74;
             this.label6.Text = "Mail*";
             // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label10.Location = new System.Drawing.Point(313, 60);
-            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(348, 61);
-            this.label10.TabIndex = 73;
-            this.label10.Text = "         Formulaire d\'inscription";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // buttonEnvoiInscription
             // 
             this.buttonEnvoiInscription.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -272,11 +257,27 @@ namespace interfaceIzara
             this.label7.TabIndex = 95;
             this.label7.Text = "Confirmation mot de passe*";
             // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
+            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label10.Location = new System.Drawing.Point(309, 29);
+            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(375, 51);
+            this.label10.TabIndex = 97;
+            this.label10.Text = "        Formulaire d\'inscription";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserControlInscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.textBoxInscriptionConfirmationPassword);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxInscriptionPassword);
@@ -296,7 +297,6 @@ namespace interfaceIzara
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label10);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlInscription";
             this.Size = new System.Drawing.Size(850, 525);
@@ -318,7 +318,6 @@ namespace interfaceIzara
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonEnvoiInscription;
         private System.Windows.Forms.ComboBox comboBoxInscriptionVille;
         private System.Windows.Forms.ComboBox comboBoxInscriptionPays;
@@ -328,5 +327,6 @@ namespace interfaceIzara
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxInscriptionConfirmationPassword;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
     }
 }

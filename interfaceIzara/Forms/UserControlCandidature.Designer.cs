@@ -120,7 +120,7 @@ namespace interfaceIzara
             this.buttonEnvoiCandidature.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEnvoiCandidature.Image = ((System.Drawing.Image)(resources.GetObject("buttonEnvoiCandidature.Image")));
             this.buttonEnvoiCandidature.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonEnvoiCandidature.Location = new System.Drawing.Point(302, 473);
+            this.buttonEnvoiCandidature.Location = new System.Drawing.Point(302, 475);
             this.buttonEnvoiCandidature.Margin = new System.Windows.Forms.Padding(5);
             this.buttonEnvoiCandidature.Name = "buttonEnvoiCandidature";
             this.buttonEnvoiCandidature.Size = new System.Drawing.Size(264, 44);
@@ -133,7 +133,7 @@ namespace interfaceIzara
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(42, 385);
+            this.label16.Location = new System.Drawing.Point(6, 385);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(129, 21);
@@ -144,7 +144,7 @@ namespace interfaceIzara
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(42, 354);
+            this.label15.Location = new System.Drawing.Point(6, 354);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(84, 22);
@@ -155,7 +155,7 @@ namespace interfaceIzara
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(42, 323);
+            this.label14.Location = new System.Drawing.Point(6, 323);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(57, 25);
@@ -166,7 +166,7 @@ namespace interfaceIzara
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(42, 167);
+            this.label12.Location = new System.Drawing.Point(6, 167);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(57, 25);
@@ -177,7 +177,7 @@ namespace interfaceIzara
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(42, 210);
+            this.label11.Location = new System.Drawing.Point(6, 210);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 28);
@@ -188,7 +188,7 @@ namespace interfaceIzara
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(42, 122);
+            this.label13.Location = new System.Drawing.Point(6, 122);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(57, 23);
@@ -202,7 +202,7 @@ namespace interfaceIzara
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
             this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
             this.label10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label10.Location = new System.Drawing.Point(225, 49);
+            this.label10.Location = new System.Drawing.Point(225, 17);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(375, 51);
@@ -215,7 +215,7 @@ namespace interfaceIzara
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(42, 428);
+            this.label9.Location = new System.Drawing.Point(6, 428);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 21);
@@ -263,7 +263,7 @@ namespace interfaceIzara
             this.radioButtonProf.AutoSize = true;
             this.radioButtonProf.Location = new System.Drawing.Point(6, 21);
             this.radioButtonProf.Name = "radioButtonProf";
-            this.radioButtonProf.Size = new System.Drawing.Size(91, 20);
+            this.radioButtonProf.Size = new System.Drawing.Size(98, 21);
             this.radioButtonProf.TabIndex = 114;
             this.radioButtonProf.TabStop = true;
             this.radioButtonProf.Text = "Professeur";
@@ -286,7 +286,7 @@ namespace interfaceIzara
             this.radioButtonEtudiant.AutoSize = true;
             this.radioButtonEtudiant.Location = new System.Drawing.Point(143, 21);
             this.radioButtonEtudiant.Name = "radioButtonEtudiant";
-            this.radioButtonEtudiant.Size = new System.Drawing.Size(74, 20);
+            this.radioButtonEtudiant.Size = new System.Drawing.Size(81, 21);
             this.radioButtonEtudiant.TabIndex = 115;
             this.radioButtonEtudiant.TabStop = true;
             this.radioButtonEtudiant.Text = "Etudiant";
@@ -424,41 +424,41 @@ namespace interfaceIzara
             // textBoxCandidaturePassword
             // 
             this.textBoxCandidaturePassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxCandidaturePassword.Location = new System.Drawing.Point(199, 239);
+            this.textBoxCandidaturePassword.Location = new System.Drawing.Point(212, 239);
             this.textBoxCandidaturePassword.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxCandidaturePassword.Name = "textBoxCandidaturePassword";
             this.textBoxCandidaturePassword.PasswordChar = '*';
-            this.textBoxCandidaturePassword.Size = new System.Drawing.Size(134, 22);
+            this.textBoxCandidaturePassword.Size = new System.Drawing.Size(121, 22);
             this.textBoxCandidaturePassword.TabIndex = 119;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 238);
+            this.label1.Location = new System.Drawing.Point(6, 238);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
+            this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 118;
             this.label1.Text = "Mot de passe";
             // 
             // textBoxCandidatureConfirmationPassword
             // 
             this.textBoxCandidatureConfirmationPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxCandidatureConfirmationPassword.Location = new System.Drawing.Point(199, 271);
+            this.textBoxCandidatureConfirmationPassword.Location = new System.Drawing.Point(212, 271);
             this.textBoxCandidatureConfirmationPassword.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxCandidatureConfirmationPassword.Name = "textBoxCandidatureConfirmationPassword";
-            this.textBoxCandidatureConfirmationPassword.Size = new System.Drawing.Size(134, 22);
+            this.textBoxCandidatureConfirmationPassword.Size = new System.Drawing.Size(121, 22);
             this.textBoxCandidatureConfirmationPassword.TabIndex = 121;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 270);
+            this.label3.Location = new System.Drawing.Point(6, 270);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 25);
+            this.label3.Size = new System.Drawing.Size(204, 25);
             this.label3.TabIndex = 120;
             this.label3.Text = "Confirmation mot de passe";
             // 

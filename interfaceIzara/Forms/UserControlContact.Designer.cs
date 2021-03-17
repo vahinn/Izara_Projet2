@@ -51,7 +51,7 @@ namespace interfaceIzara
             this.buttonEnvoiCandidature.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEnvoiCandidature.Image = ((System.Drawing.Image)(resources.GetObject("buttonEnvoiCandidature.Image")));
             this.buttonEnvoiCandidature.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonEnvoiCandidature.Location = new System.Drawing.Point(257, 450);
+            this.buttonEnvoiCandidature.Location = new System.Drawing.Point(310, 450);
             this.buttonEnvoiCandidature.Margin = new System.Windows.Forms.Padding(5);
             this.buttonEnvoiCandidature.Name = "buttonEnvoiCandidature";
             this.buttonEnvoiCandidature.Size = new System.Drawing.Size(264, 44);
@@ -64,7 +64,7 @@ namespace interfaceIzara
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label1.Location = new System.Drawing.Point(22, 36);
+            this.label1.Location = new System.Drawing.Point(75, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 43);
             this.label1.TabIndex = 89;
@@ -77,7 +77,7 @@ namespace interfaceIzara
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label3.Location = new System.Drawing.Point(248, 36);
+            this.label3.Location = new System.Drawing.Point(301, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 43);
             this.label3.TabIndex = 90;
@@ -90,7 +90,7 @@ namespace interfaceIzara
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label4.Location = new System.Drawing.Point(489, 37);
+            this.label4.Location = new System.Drawing.Point(542, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(223, 43);
             this.label4.TabIndex = 91;
@@ -102,7 +102,7 @@ namespace interfaceIzara
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 77);
+            this.label2.Location = new System.Drawing.Point(84, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 21);
             this.label2.TabIndex = 92;
@@ -112,7 +112,7 @@ namespace interfaceIzara
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(249, 77);
+            this.label5.Location = new System.Drawing.Point(302, 77);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(156, 21);
             this.label5.TabIndex = 93;
@@ -122,7 +122,7 @@ namespace interfaceIzara
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(487, 77);
+            this.label6.Location = new System.Drawing.Point(540, 77);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(225, 21);
             this.label6.TabIndex = 94;
@@ -133,7 +133,7 @@ namespace interfaceIzara
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.label7.Location = new System.Drawing.Point(26, 171);
+            this.label7.Location = new System.Drawing.Point(79, 171);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(308, 41);
             this.label7.TabIndex = 95;
@@ -144,7 +144,7 @@ namespace interfaceIzara
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.label8.Location = new System.Drawing.Point(392, 171);
+            this.label8.Location = new System.Drawing.Point(445, 171);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(320, 41);
             this.label8.TabIndex = 96;
@@ -155,7 +155,7 @@ namespace interfaceIzara
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.label9.Location = new System.Drawing.Point(26, 235);
+            this.label9.Location = new System.Drawing.Point(79, 235);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(686, 41);
             this.label9.TabIndex = 97;
@@ -166,7 +166,7 @@ namespace interfaceIzara
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.label10.Location = new System.Drawing.Point(26, 298);
+            this.label10.Location = new System.Drawing.Point(79, 298);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(686, 134);
             this.label10.TabIndex = 98;

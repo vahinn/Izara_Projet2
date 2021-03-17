@@ -20,9 +20,9 @@ namespace interfaceIzara
             panel.Height = buttonParent.Height;
             panel.Top = buttonParent.Top;
             buttonParrainage.Visible = false;
-            buttonConnexion.Visible = false;
+            buttonConnexion.Visible = true;
+           buttonInscription.Visible = false;
             buttonCandidature.Visible = false;
-            buttonInscription.Visible = false;
             userControlMenu1.BringToFront();
 
 
@@ -66,12 +66,13 @@ namespace interfaceIzara
         private void button2_Click(object sender, EventArgs e)
         {
             showSubMenu(subMenu);
-       
-            buttonParrainage.BringToFront();
+  
             buttonParrainage.Visible = false;
             buttonConnexion.Visible = false;
             buttonInscription.Visible = false;
+            buttonCandidature.Visible = false;
             userControlMenu1.BringToFront();
+            buttonConnexion.Visible = true;
            
            
         }
@@ -81,7 +82,6 @@ namespace interfaceIzara
             panel.Height = buttonParent.Height;
             panel.Top = buttonParent.Top;
          
-            buttonConnexion.Visible = true;
             buttonParrainage.Visible = true;
             buttonCandidature.Visible = false;
             buttonInscription.Visible = true;
@@ -94,11 +94,10 @@ namespace interfaceIzara
             panel.Height = buttonProf.Height;
             panel.Top = buttonProf.Top;
             
-            buttonConnexion.Visible = true;
-            buttonParrainage.Visible = false;
-            buttonCandidature.Visible = true;
-            buttonInscription.Visible = false;
-            userControlProf1.BringToFront();
+             buttonParrainage.Visible = false;
+            
+             buttonCandidature.Visible = true;
+             userControlProf1.BringToFront();
             
         }
 
@@ -117,24 +116,10 @@ namespace interfaceIzara
             userControlConnexion1.BringToFront();
         }
 
-        private void buttonCandidature_Click(object sender, EventArgs e)
-        {
-            userControlCandidature1.BringToFront();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-         
-        }
 
         private void buttonInscription_Click(object sender, EventArgs e)
         {
             userControlInscription1.BringToFront();
-        }
-
-        private void buttonContact_Click(object sender, EventArgs e)
-        {
-          
         }
 
         private void buttonContact_Click_1(object sender, EventArgs e)
@@ -158,6 +143,11 @@ namespace interfaceIzara
                 this.WindowState = FormWindowState.Maximized;
             else
                 this.WindowState = FormWindowState.Normal;
+        }
+
+        private void buttonCandidature_Click(object sender, EventArgs e)
+        {
+            userControlCandidature1.BringToFront();
         }
     }
 }
