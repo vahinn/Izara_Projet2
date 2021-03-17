@@ -16,5 +16,10 @@ namespace interfaceIzara
         {
             InitializeComponent();
         }
+
+        private void labelLettreParrainage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

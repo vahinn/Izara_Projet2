@@ -24,7 +24,8 @@ namespace interfaceIzara
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 if (textBoxCandidaturePassword.Text != textBoxCandidatureConfirmationPassword.Text)
                     throw new Exception("Mot de passe incorecte");
                 Users prof = new Users(0,
@@ -47,9 +48,9 @@ namespace interfaceIzara
 
                 textBoxCandidatureConfirmationPassword.Text = "";
                 textBoxCandidaturePassword.Text = "";
-                textBoxCandidatureNom.Text="";
-                textBoxCandidaturePrenom.Text="";
-                textBoxCandidatureMail.Text="";
+                textBoxCandidatureNom.Text = "";
+                textBoxCandidaturePrenom.Text = "";
+                textBoxCandidatureMail.Text = "";
 
                 MessageBox.Show("candidature envoyée");
 
@@ -59,11 +60,11 @@ namespace interfaceIzara
                 MessageBox.Show("Une erreur s'est produite , veuillez contacter l' administrateur");
 
             }
-            catch (Exception exp )
+            catch (Exception exp)
             {
                 MessageBox.Show("Veuillez ressaisir votre mot de passe");
             }
-            }
+        }
 
         private void label10_Click(object sender, EventArgs e)
         {
@@ -88,7 +89,7 @@ namespace interfaceIzara
             i.Filter = "jpg files( *.jpg)|*.jpg|png files (*.png)|*.png| all files (*.*)|*.*";
             i.FilterIndex = 3;
             i.RestoreDirectory = true;
-            if (i.ShowDialog() ==System.Windows.Forms.DialogResult.OK)
+            if (i.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 filePath = i.FileName;
                 string[] pth = filePath.Split('\\');
@@ -97,27 +98,57 @@ namespace interfaceIzara
 
                 File.Copy(@filePath, @CurrentDirectory + pth[pth.Length - 1], true);
                 pictureBox1.Load(@CurrentDirectory + pth[pth.Length - 1]);
+                MessageBox.Show("fichier telechargé");
             }
         }
-    }
 
-    [Serializable]
-    internal class AuthException : Exception
-    {
-        public AuthException()
+        private void buttonCandidatureTelecharger_Click(object sender, EventArgs e)
         {
+            var filePath = string.Empty;
+            var fileRecept = string.Empty;
+            try
+            {
+                OpenFileDialog i = new OpenFileDialog();
+                i.Filter = "pdf files( *.pdf)|*.pdf|all files (*.*)|*.*";
+                i.FilterIndex = 2;
+                i.RestoreDirectory = true;
+                if (i.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    filePath = i.FileName;
+                    string[] pth = filePath.Split('\\');
+                    var CurrentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                    fileRecept = CurrentDirectory + "\\Assets\\img\\profilePicture\\"/*+ pth[pth.Length - 1]*/;
+
+                    File.Copy(@filePath, @CurrentDirectory + pth[pth.Length - 1], true);
+                    MessageBox.Show("fichier telechargé");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("une erreur s'est produite", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
-        public AuthException(string message) : base(message)
+        [Serializable]
+        internal class AuthException : Exception
         {
-        }
+            public AuthException()
+            {
+            }
 
-        public AuthException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
+            public AuthException(string message)
+                : base(message)
+            {
+            }
 
-        protected AuthException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
+            public AuthException(string message, Exception innerException)
+                : base(message, innerException)
+            {
+            }
+
+            protected AuthException(SerializationInfo info, StreamingContext context)
+                : base(info, context)
+            {
+            }
         }
     }
 }

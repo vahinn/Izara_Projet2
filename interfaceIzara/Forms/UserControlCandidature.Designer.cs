@@ -233,6 +233,7 @@ namespace interfaceIzara
             this.buttonCandidatureTelecharger.TabIndex = 111;
             this.buttonCandidatureTelecharger.Text = "Télécharger";
             this.buttonCandidatureTelecharger.UseVisualStyleBackColor = false;
+            this.buttonCandidatureTelecharger.Click += new System.EventHandler(this.buttonCandidatureTelecharger_Click);
             // 
             // button2
             // 
