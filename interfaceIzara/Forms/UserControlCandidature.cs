@@ -88,7 +88,7 @@ namespace interfaceIzara
             i.Filter = "jpg files( *.jpg)|*.jpg|png files (*.png)|*.png| all files (*.*)|*.*";
             i.FilterIndex = 3;
             i.RestoreDirectory = true;
-            if (i.ShowDialog() == DialogResult.OK)
+            if (i.ShowDialog() ==System.Windows.Forms.DialogResult.OK)
             {
                 filePath = i.FileName;
                 string[] pth = filePath.Split('\\');
@@ -96,7 +96,7 @@ namespace interfaceIzara
                 fileRecept = CurrentDirectory + "\\Assets\\img\\profilePicture\\"/*+ pth[pth.Length - 1]*/;
 
                 File.Copy(@filePath, @CurrentDirectory + pth[pth.Length - 1], true);
-                
+                pictureBox1.Load(@CurrentDirectory + pth[pth.Length - 1]);
             }
         }
     }
