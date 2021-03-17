@@ -21,7 +21,7 @@ namespace interfaceIzara.Model
             try
             {
                 /*string connectionString = "SERVER=mysql-heriniaina1905.alwaysdata.net; DATABASE=heriniaina1905_projet2; UID=210520_projet2; PASSWORD=PaSs3$2021";*/
-                string connectionString = "SERVER=192.168.0.106; DATABASE=izara; UID=root; PASSWORD=";
+                string connectionString = "Server = 192.168.0.106; Port = 3306; Database = izara; Uid = root; Pwd =";
                 this.Connexion = new MySqlConnection(connectionString);
             }
             catch (Exception e)
