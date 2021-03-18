@@ -108,7 +108,7 @@ namespace interfaceIzara
 
         private void buttonParrainage_Click(object sender, EventArgs e)
         {
-            userControlParrainage1.BringToFront();
+            buttonConnexion.BringToFront();
         }
 
         private void buttonConnexion_Click(object sender, EventArgs e)

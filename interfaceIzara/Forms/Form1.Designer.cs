@@ -40,14 +40,12 @@ namespace interfaceIzara
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonContact = new System.Windows.Forms.Button();
-            this.buttonParrainage = new System.Windows.Forms.Button();
             this.buttonConnexion = new System.Windows.Forms.Button();
             this.buttonInscription = new System.Windows.Forms.Button();
             this.buttonAgrandir = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonReduire = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonCandidature = new System.Windows.Forms.Button();
             this.userControlProf1 = new interfaceIzara.UserControlProf();
             this.userControlParents1 = new interfaceIzara.UserControlParents();
             this.userControlParrainage1 = new interfaceIzara.UserControlParrainage();
@@ -57,6 +55,8 @@ namespace interfaceIzara
             this.userControlConnexion1 = new interfaceIzara.UserControlConnexion();
             this.userControlCandidature1 = new interfaceIzara.UserControlCandidature();
             this.userControlAdmin1 = new interfaceIzara.UserControlAdmin();
+            this.buttonCandidature = new System.Windows.Forms.Button();
+            this.buttonParrainage = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.subMenu.SuspendLayout();
@@ -204,22 +204,6 @@ namespace interfaceIzara
             this.buttonContact.UseVisualStyleBackColor = false;
             this.buttonContact.Click += new System.EventHandler(this.buttonContact_Click_1);
             // 
-            // buttonParrainage
-            // 
-            this.buttonParrainage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.buttonParrainage.FlatAppearance.BorderSize = 0;
-            this.buttonParrainage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonParrainage.Font = new System.Drawing.Font("Century Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonParrainage.ForeColor = System.Drawing.Color.White;
-            this.buttonParrainage.Location = new System.Drawing.Point(8, 388);
-            this.buttonParrainage.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonParrainage.Name = "buttonParrainage";
-            this.buttonParrainage.Size = new System.Drawing.Size(252, 37);
-            this.buttonParrainage.TabIndex = 19;
-            this.buttonParrainage.Text = "Parrainer un professeur";
-            this.buttonParrainage.UseVisualStyleBackColor = false;
-            this.buttonParrainage.Click += new System.EventHandler(this.buttonParrainage_Click);
-            // 
             // buttonConnexion
             // 
             this.buttonConnexion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -317,25 +301,6 @@ namespace interfaceIzara
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(815, 565);
             this.panel3.TabIndex = 26;
-            // 
-            // buttonCandidature
-            // 
-            this.buttonCandidature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCandidature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
-            this.buttonCandidature.FlatAppearance.BorderSize = 0;
-            this.buttonCandidature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCandidature.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCandidature.ForeColor = System.Drawing.Color.White;
-            this.buttonCandidature.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonCandidature.Location = new System.Drawing.Point(626, 85);
-            this.buttonCandidature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonCandidature.Name = "buttonCandidature";
-            this.buttonCandidature.Size = new System.Drawing.Size(292, 86);
-         
-            this.buttonCandidature.TabIndex = 27;
-            this.buttonCandidature.Text = "Candidature";
-            this.buttonCandidature.UseVisualStyleBackColor = false;
-            this.buttonCandidature.Click += new System.EventHandler(this.buttonCandidature_Click);
             // 
             // userControlProf1
             // 
@@ -438,6 +403,40 @@ namespace interfaceIzara
             this.userControlAdmin1.Size = new System.Drawing.Size(812, 562);
             this.userControlAdmin1.TabIndex = 0;
             // 
+            // buttonCandidature
+            // 
+            this.buttonCandidature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCandidature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
+            this.buttonCandidature.FlatAppearance.BorderSize = 0;
+            this.buttonCandidature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCandidature.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCandidature.ForeColor = System.Drawing.Color.White;
+            this.buttonCandidature.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.buttonCandidature.Location = new System.Drawing.Point(626, 85);
+            this.buttonCandidature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCandidature.Name = "buttonCandidature";
+            this.buttonCandidature.Size = new System.Drawing.Size(292, 86);
+            this.buttonCandidature.TabIndex = 27;
+            this.buttonCandidature.Text = "Candidature";
+            this.buttonCandidature.UseVisualStyleBackColor = false;
+            this.buttonCandidature.Click += new System.EventHandler(this.buttonCandidature_Click);
+            // 
+            // buttonParrainage
+            // 
+            this.buttonParrainage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(173)))));
+            this.buttonParrainage.FlatAppearance.BorderSize = 0;
+            this.buttonParrainage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonParrainage.Font = new System.Drawing.Font("Century Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonParrainage.ForeColor = System.Drawing.Color.White;
+            this.buttonParrainage.Location = new System.Drawing.Point(8, 388);
+            this.buttonParrainage.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonParrainage.Name = "buttonParrainage";
+            this.buttonParrainage.Size = new System.Drawing.Size(252, 37);
+            this.buttonParrainage.TabIndex = 19;
+            this.buttonParrainage.Text = "Parrainer un professeur";
+            this.buttonParrainage.UseVisualStyleBackColor = false;
+            this.buttonParrainage.Click += new System.EventHandler(this.buttonParrainage_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -484,7 +483,6 @@ namespace interfaceIzara
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button buttonContact;
-        private System.Windows.Forms.Button buttonParrainage;
         private System.Windows.Forms.Button buttonConnexion;
         private System.Windows.Forms.Button buttonInscription;
         private System.Windows.Forms.Button buttonAgrandir;
@@ -501,6 +499,7 @@ namespace interfaceIzara
         private UserControlParrainage userControlParrainage1;
         private UserControlProf userControlProf1;
         private System.Windows.Forms.Button buttonCandidature;
+        private System.Windows.Forms.Button buttonParrainage;
     }
 }
 
