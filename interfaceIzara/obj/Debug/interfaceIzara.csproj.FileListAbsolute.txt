@@ -73,3 +73,4 @@ C:\Users\Inclusiv Academy 4\Documents\izara\interfaceIzara\bin\Debug\DotLiquid.d
 C:\Users\Inclusiv Academy 4\Documents\izara\interfaceIzara\bin\Debug\DotLiquid.xml
 C:\Users\Inclusiv Academy 4\Documents\izara\interfaceIzara\bin\Debug\it\DotLiquid.resources.dll
 C:\Users\Inclusiv Academy 4\Documents\izara\interfaceIzara\obj\Debug\interfaceIzara.csproj.CopyComplete
+C:\Users\Inclusiv Academy 4\Documents\izara\interfaceIzara\obj\Debug\interfaceIzara.csprojAssemblyReference.cache

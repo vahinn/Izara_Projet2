@@ -331,6 +331,7 @@ namespace interfaceIzara
             this.buttonCandidature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCandidature.Name = "buttonCandidature";
             this.buttonCandidature.Size = new System.Drawing.Size(292, 86);
+         
             this.buttonCandidature.TabIndex = 27;
             this.buttonCandidature.Text = "Candidature";
             this.buttonCandidature.UseVisualStyleBackColor = false;
