@@ -94,7 +94,7 @@ namespace interfaceIzara
             this.buttonConnexion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConnexion.Image = ((System.Drawing.Image)(resources.GetObject("buttonConnexion.Image")));
             this.buttonConnexion.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonConnexion.Location = new System.Drawing.Point(319, 333);
+            this.buttonConnexion.Location = new System.Drawing.Point(314, 335);
             this.buttonConnexion.Margin = new System.Windows.Forms.Padding(4);
             this.buttonConnexion.Name = "buttonConnexion";
             this.buttonConnexion.Size = new System.Drawing.Size(306, 39);

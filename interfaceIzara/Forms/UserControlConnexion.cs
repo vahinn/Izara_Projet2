@@ -1,4 +1,5 @@
-﻿using interfaceIzara.Model.Entities;
+﻿using interfaceIzara.Model;
+using interfaceIzara.Model.Entities;
 using interfaceIzara.Model.Utilities;
 using System;
 using System.Collections.Generic;
@@ -31,13 +32,46 @@ namespace interfaceIzara
                 Console.WriteLine("Nom : {0}", utilisateur.nom);
                 Console.WriteLine("Mail : {0}", utilisateur.mail);
 
-                MessageBox.Show(utilisateur.nom+" est Connecté!");
+                switch (utilisateur.reference_groupe)
+                {
+                    case 1:
+                        Console.WriteLine("Parent");
+                        break;
+                    case 2:
+                        Console.WriteLine("Prof");
+                        break;
+                    case 3:
+                        Console.WriteLine("Administrateur");
+                        break;
+                }
             } 
-            catch(NullReferenceException exp)
+            catch(NullReferenceException NullExp)
             {
                 MessageBox.Show("Veuillez vérifier votre mail ou mot de passe!");
-                Console.WriteLine("UserControlConnexion :: buttonConnexion_Click :: {0}",exp.StackTrace);
+                Console.WriteLine("UserControlConnexion :: buttonConnexion_Click :: {0}", NullExp.StackTrace);
             }
+        }
+
+        private Group GetGroupRef(Users user)
+        {
+            ConnectDB con = new ConnectDB();
+            CrudDB db = new CrudDB();
+            try
+            {
+                con.Connexion.Open();
+                List<Group> liste_grp = db.Find<Group>("group", new Group(), "", con.Connexion);
+
+                return liste_grp[0];
+            }
+            catch(Exception e)
+            {
+
+            }
+            finally
+            {
+                con.Connexion.Close();
+            }
+            return 0;
         }
     }
 }
